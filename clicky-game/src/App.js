@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import FriendCard from "./components/FriendCard";
+import IconCard from "./components/IconCard";
 import Wrapper from "./components/Wrapper";
-import Title from "./components/Title";
 import icons from "./icons.json";
 
 class App extends Component {
@@ -17,13 +16,13 @@ class App extends Component {
     this.setState({ icons });
   };
 
-  // Map over this.state.icons and render a FriendCard component for each icon object
+  // Map over this.state.icons and render a IconCard component for each icon object
   render() {
     return (
       <Wrapper>
         <Title>Friends List</Title>
         {this.state.icons.map(icon => (
-          <FriendCard
+          <IconCard
             iconSelected={this.iconSelected}
             id={icon.id}
             key={icon.id}
