@@ -1,73 +1,145 @@
 [
     {
         "id": 1,
-        "name": "name goes here",
-        "image": "image goes here"
+        "name": "Mario",
+        "image": "https://www.smashbros.com/assets_v2/img/fighter/mario/main2.png"
     },
 
     {
         "id": 2,
-        "name": "name goes here",
-        "image": "image goes here"
+        "name": "Luigi",
+        "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/87c813fb-7962-4f21-a3e4-691d91fe15d2/dcr4p27-e3413553-71fb-421c-acf8-36715ec6e0cc.png/v1/fill/w_1024,h_1024,strp/t_poses___luigi_by_tryptech_dcr4p27-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcLzg3YzgxM2ZiLTc5NjItNGYyMS1hM2U0LTY5MWQ5MWZlMTVkMlwvZGNyNHAyNy1lMzQxMzU1My03MWZiLTQyMWMtYWNmOC0zNjcxNWVjNmUwY2MucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.oeJNV1pI-Aidss9Xp8_HkgY3gfjJkD6oZwd-S17PLH8"
     },
 
     {
         "id": 3,
-        "name": "name goes here",
-        "image": "image goes here"
-    },
-    
-    {
-        "id": 4,
-        "name": "name goes here",
-        "image": "image goes here"
+        "name": "Bowser",
+        "image": "https://www.ssbwiki.com/images/d/d5/Bowser_SSB4.png"
     },
 
     {
+        "id": 4,
+        "name": "Piranha Plant",
+        "image": "https://www.ssbwiki.com/images/thumb/f/f0/Piranha_Plant_SSBU.png/1200px-Piranha_Plant_SSBU.png"
+    },
+    
+    {
         "id": 5,
-        "name": "name goes here",
-        "image": "image goes here"
+        "name": "Link",
+        "image": "https://www.ssbwiki.com/images/0/00/Link_BotW.png"
     },
 
     {
         "id": 6,
-        "name": "name goes here",
-        "image": "image goes here"
+        "name": "Zelda",
+        "image": "https://vignette.wikia.nocookie.net/ssb/images/9/92/Zelda_-_Super_Smash_Bros._Ultimate.png/revision/latest?cb=20180612205517"
     },
 
     {
         "id": 7,
-        "name": "name goes here",
-        "image": "image goes here"
+        "name": "Ganondorf",
+        "image": "https://www.smashbros.com/assets_v2/img/fighter/ganondorf/main.png"
     },
 
     {
         "id": 8,
-        "name": "name goes here",
-        "image": "image goes here"
+        "name": "Fox",
+        "image": "https://vignette.wikia.nocookie.net/ssb/images/c/c0/Fox_-_Super_Smash_Bros._Brawl.png/revision/latest?cb=20160118010229"
     },
 
     {
         "id": 9,
-        "name": "name goes here",
-        "image": "image goes here"
+        "name": "Falco",
+        "image": "https://www.ssbwiki.com/images/thumb/8/80/Falco_SSBU.png/250px-Falco_SSBU.png"
     },
-    
+
     {
         "id": 10,
-        "name": "name goes here",
-        "image": "image goes here"
+        "name": "Wolf",
+        "image": "https://vignette.wikia.nocookie.net/ssb/images/e/e3/Wolf_-_Super_Smash_Bros._Ultimate.png/revision/latest?cb=20181028020708"
     },
 
     {
         "id": 11,
-        "name": "name goes here",
-        "image": "image goes here"
+        "name": "Donkey Kong",
+        "image": "https://www.ssbwiki.com/images/b/b5/SuperMarioParty_DonkeyKong.png"
     },
 
     {
         "id": 12,
-        "name": "name goes here",
-        "image": "image goes here"
+        "name": "King K Rule",
+        "image": "https://www.ssbwiki.com/images/thumb/b/b6/King_K._Rool_SSBU.png/250px-King_K._Rool_SSBU.png"
+    },
+
+    {
+        "id": 13,
+        "name": "Kirby",
+        "image": "https://vignette.wikia.nocookie.net/ssb/images/a/a2/Kirby_-_Super_Smash_Bros._for_Nintendo_3DS_and_Wii_U.png/revision/latest?cb=20150902075318"
+    },
+
+    {
+        "id": 14,
+        "name": "Metal Knight",
+        "image": "https://vignette.wikia.nocookie.net/ssb/images/b/b5/Meta_Knight_-_Super_Smash_Bros._Brawl.png/revision/latest?cb=20160118005844"
+    },
+
+    {
+        "id": 15,
+        "name": "King Dedede",
+        "image": "https://www.ssbwiki.com/images/thumb/f/f5/King_Dedede_SSBU.png/250px-King_Dedede_SSBU.png"
+    },
+    
+    {
+        "id": 16,
+        "name": "Pikachu",
+        "image": "https://vignette.wikia.nocookie.net/ssb/images/2/26/Pikachu_-_Super_Smash_Bros._Ultimate.png/revision/latest?cb=20180906080903"
+    },
+
+    {
+        "id": 17,
+        "name": "Jigglypuff",
+        "image": "https://vignette.wikia.nocookie.net/youtubescratch/images/9/92/Jigglypuff_smash_bros.png/revision/latest?cb=20190618112619"
+    },
+
+    {
+        "id": 18,
+        "name": "Samus",
+        "image": "https://www.sweatpantsgaming.com/wp-content/uploads/2019/01/Samus-Super-Smash-Bros-Ultimate.png"
+    },
+
+    {
+        "id": 19,
+        "name": "Ridley",
+        "image": "https://www.smashbros.com/assets_v2/img/fighter/ridley/main2.png"
+    },
+
+    {
+        "id": 20,
+        "name": "Pit",
+        "image": "https://upload.wikimedia.org/wikipedia/en/5/51/Pit_%28Kid_Icarus%29_Ultimate.png"
+    },
+
+    {
+        "id": 21,
+        "name": "Palutena",
+        "image": "https://vignette.wikia.nocookie.net/ssb/images/c/c5/Palutena_-_Super_Smash_Bros._Ultimate.png/revision/latest?cb=20181113011022"
+    },
+
+    {
+        "id": 22,
+        "name": "Lucina",
+        "image": "https://www.ssbwiki.com/images/thumb/d/dc/Lucina_SSBU.png/250px-Lucina_SSBU.png"
+    },
+
+    {
+        "id": 23,
+        "name": "Sonic",
+        "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/179bb00f-971e-4cf6-92a3-f9877bd722ac/dcg780j-e1f1739e-53b6-4971-bac1-c45c89c126d7.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzE3OWJiMDBmLTk3MWUtNGNmNi05MmEzLWY5ODc3YmQ3MjJhY1wvZGNnNzgwai1lMWYxNzM5ZS01M2I2LTQ5NzEtYmFjMS1jNDVjODljMTI2ZDcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ltz5j3iG6huMmDldcOePYAyzN9RzQpcby9k2TPWhNwU"
+    },
+
+    {
+        "id": 24,
+        "name": "Ness",
+        "image": "https://vignette.wikia.nocookie.net/nintendo/images/d/d5/Super_Smash_Bros._Ultimate_-_Character_Art_-_Ness.png/revision/latest?cb=20190710193140&path-prefix=en"
     }
 ]
