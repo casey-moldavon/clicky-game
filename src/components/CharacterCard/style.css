@@ -1,9 +1,9 @@
-.image-icon {
+.image-char {
     width: 200px;
     height: 200px;
 
     border: 5px solid white;
-    background-image: url('../../images/smash-logo.jpg');
+    background-image: url('../images/smash-logo.jpg');
     background-size: 200px 200px;
 
     float: left;
