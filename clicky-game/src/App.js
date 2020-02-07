@@ -20,7 +20,6 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <Title>Friends List</Title>
         {this.state.icons.map(icon => (
           <IconCard
             iconSelected={this.iconSelected}
