@@ -13,10 +13,25 @@ class App extends Component {
     score: 0,
     topScore: 0,
     maxScore: 24,
-    message: "Start the round with a click!",
+    message: "Start the round with a click!"
   };
-  
 
+
+  charSelect = id => {
+    var count = this.state.chars.count;
+    count += 1
+
+    if (count > 1) {
+      this.setState({ score: 0 })
+    }
+    else {
+      this.setState({ score: 20 })
+    }
+console.log(this.state.score);
+  }
+
+
+  
 
 
   // this function re-arranges the order of elements listed within the array
@@ -28,26 +43,25 @@ class App extends Component {
     while (0 !== currentIndex) {
   
       randomIndex = Math.floor(Math.random() * currentIndex);
-      console.log("Random Index: ", randomIndex);
       currentIndex -= 1;
   
       tempValue = array[currentIndex];
       array[currentIndex] = array[randomIndex];
       array[randomIndex] = tempValue;
     }
-    console.log("edited array: ", array);
     return array;
   }
+
 
   
 
 
-  removeFriend = id => {
-    // Filter this.state.chars for chars with an id not equal to the id being removed
-    const chars = this.state.chars.filter(friend => friend.id !== id);
-    // Set this.state.chars equal to the new chars array
-    this.setState({ chars });
-  };
+  // removeFriend = id => {
+  //   // Filter this.state.chars for chars with an id not equal to the id being removed
+  //   const chars = this.state.chars.filter(friend => friend.id !== id);
+  //   // Set this.state.chars equal to the new chars array
+  //   this.setState({ chars });
+  // };
 
 
 
@@ -57,15 +71,20 @@ class App extends Component {
       <div>
         <Navbar />
         <Wrapper>
-          <Score>Score displays here</Score>
+          <Score
+            score={this.state.score}
+            topScore={this.state.topScore}
+            message={this.state.message}>Score displays here</Score>
+
           {this.state.chars.map(char => (
               <CharacterCard
                 // charSelected={this.charSelected}
-                removeFriend={this.removeFriend}
+                charSelect={this.charSelect}
                 id={char.id}
                 key={char.id}
                 name={char.name}
                 image={char.image}
+                count={char.count}
               />
             ))}
         </Wrapper>
@@ -75,44 +94,3 @@ class App extends Component {
 }
 
 export default App;
-
-
-
-
-// const win = "Yay! that's correct!";
-// const fail = "You should play some more memory games";
-
-
-
-// charSelected = id => {
-
-// }
-
-
-
-  // correct = () => {
-  //   if (this.state.score + 1 > this.state.topScore) {
-  //     this.setState({topScore: this.state.topScore + 1})
-  //   }
-  //   if (this.state.score + 1 === this.statemaxScore) {
-  //     this.setState({score: this.state.score +1, win})
-  //   } else {
-  //     this.setState({score: this.state.score +1, fail})
-  //   }
-  // }
-
-  // wrong = () => {
-  //   this.setState({score: 0, fail})
-  //   const updatedIcons = this.state.characters.map(char => charSelected === (true) ? {...char, isClicked: false} : char)
-  //   return updatedIcons
-  // }
-
-  // resetGame = (currentIcons) => {
-  //   if(this.state.score + 1 === this.state.maxScore) {
-  //     this.setState({score: 0, topScore: 0})
-  //     const updatedIcons = currentIcons.map(char => (true) ? {...char, charSelected: false} : char)
-  //     return updatedIcons
-  //   } else {
-  //     return currentIcons
-  //   }
-  // }

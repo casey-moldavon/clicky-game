@@ -4,7 +4,7 @@ import "./style.css";
 function CharacterCard(props) {
   return (
     <div className="card">
-      <span onClick={() => props.removeFriend(props.id)} className="remove">
+      <span onClick={() => props.charSelect(props.id)} className="remove">
         <img alt={props.name} src={props.image} className="image-char" />
       </span>
     </div>
