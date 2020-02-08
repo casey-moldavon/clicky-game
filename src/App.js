@@ -10,6 +10,7 @@ class App extends Component {
   // Setting this.state.chars to the chars json array
   state = {
     chars: chars,
+    unChars: chars,
     score: 0,
     topScore: 0,
     maxScore: 24,
@@ -17,18 +18,18 @@ class App extends Component {
   };
 
 
-  charSelect = id => {
-    var count = this.state.chars.count;
-    count += 1
+  // charSelect = id => {
+  //   var count = this.state.chars.count;
+  //   count += 1
 
-    if (count > 1) {
-      this.setState({ score: 0 })
-    }
-    else {
-      this.setState({ score: 20 })
-    }
-console.log(this.state.score);
-  }
+  //   if (count > 1) {
+  //     this.setState({ score: 0 })
+  //   }
+  //   else {
+  //     this.setState({ score: 20 })
+  //   }
+  // console.log(this.state.score);
+  // }
 
 
   
@@ -51,6 +52,34 @@ console.log(this.state.score);
     }
     return array;
   }
+
+
+  // This function is called onClick and collects the player's score and tracks correct / incorrect choices
+  charSelect = id => {
+    const findChar = this.state.unChars.find(item => item.id === id);
+
+    if (findChar === undefined) {
+        this.setState({ 
+            message: "Already selected this Character!",
+            topScore: (this.state.score > this.state.topScore) ? this.state.score : this.state.topScore,
+            score: 0,
+            chars: chars,
+            unChars: chars
+        });
+    }
+    else {
+        const newCharacter = this.state.unChars.filter(item => item.id !== id);
+        
+        this.setState({ 
+            message: "Good! Keep Trying!",
+            score: this.state.score + 1,
+            chars: chars,
+            unChars: newCharacter
+        });
+    }
+    console.log(this.state.score);
+    this.randomChar(chars);
+};
 
 
   
@@ -79,12 +108,12 @@ console.log(this.state.score);
           {this.state.chars.map(char => (
               <CharacterCard
                 // charSelected={this.charSelected}
-                charSelect={this.charSelect}
                 id={char.id}
                 key={char.id}
-                name={char.name}
                 image={char.image}
-                count={char.count}
+                name={char.name}
+                charSelect={this.charSelect} 
+                score={this.state.score}
               />
             ))}
         </Wrapper>
