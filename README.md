@@ -1,6 +1,6 @@
 # clicky-game
 
-![image](./src/components/images/smash-logo.jpg)
+![image](./src/components/images/small-logo.jpg)
 
 The clicky game, Super Smash Bros Edition! A fun little memory game with but a few (currently 24) of the 70+ featured characters from Nintendo's #1 top selling franchise. The game is quite simple: The player must select each picture once (and onyl once) and wins when all 24 have been chosen without repeats. Should the player select the same character twice within the same game, the round starts over and returns their score to 0.
 ​
