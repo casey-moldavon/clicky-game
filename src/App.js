@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import CharacterCard from "./components/CharacterCard";
 import Wrapper from "./components/Wrapper";
-import Score from "./components/Score";
 import Navbar from "./components/Navbar";
 import chars from "./chars.json";
+import "./App.css";
 
 class App extends Component {
 
@@ -15,24 +15,7 @@ class App extends Component {
     topScore: 0,
     maxScore: 24,
     message: "Start the round with a click!"
-  };
-
-
-  // charSelect = id => {
-  //   var count = this.state.chars.count;
-  //   count += 1
-
-  //   if (count > 1) {
-  //     this.setState({ score: 0 })
-  //   }
-  //   else {
-  //     this.setState({ score: 20 })
-  //   }
-  // console.log(this.state.score);
-  // }
-
-
-  
+  };  
 
 
   // this function re-arranges the order of elements listed within the array
@@ -82,29 +65,17 @@ class App extends Component {
 };
 
 
-  
-
-
-  // removeFriend = id => {
-  //   // Filter this.state.chars for chars with an id not equal to the id being removed
-  //   const chars = this.state.chars.filter(friend => friend.id !== id);
-  //   // Set this.state.chars equal to the new chars array
-  //   this.setState({ chars });
-  // };
-
-
-
   // Map over this.state.chars and render a CharacterCard component for each friend object
   render() {
     return (
       <div>
-        <Navbar />
-        <Wrapper>
-          <Score>
-            <div className="currentScore"> Score: {this.state.score}</div>
-            <div className="topScore">Top Score: {this.state.score}</div>
-            </Score>
 
+        <Navbar
+          score={this.state.score}
+          topScore={this.state.topScore}
+        />
+        
+        <Wrapper>
           {this.state.chars.map(char => (
               <CharacterCard
                 // charSelected={this.charSelected}
