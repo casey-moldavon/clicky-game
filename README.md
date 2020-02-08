@@ -9,7 +9,7 @@ To play my game, simply visit the live link (https://casey-moldavon.github.io/cl
 Instructions:
 The rules are simple. Click on each image only once to increase your score. If you select the same character twice, the game ends and starts over.
 
-![image](./src/components/images/full-game.jpg)
+![image](./src/components/images/full-game.png)
 
 
 
@@ -31,13 +31,13 @@ Then i began psudo coding out the thought process of the score keeping, randomiz
 
 For the image display randomization, i tried multiple methods but found that a simple function for randomizing the order of an array was all i needed since the characters were stored as objects within an array inside the json file. from there i just googled a simple randomize method to re-arrange the array. This function would be called after the user selects a character. This was my next challenge and probably the hardest part.
 
-![random display](./src/components/images/code-1.jpg)
+![random display](./src/components/images/code-1.png)
 in this image above, you'll see the function i used/altered to randomly rearrange the json array of character objects.
 
 
 I needed to create a function that would not only detect that the user has clicked on an image and then identify what that image was but i would also need to include code to identify if the image was "correct" or "incorrect" based on if it had been previously chosen or not. This took a bit of time. At one point i even added count variables to each object within the json array with the plan to just add to that somehow and track with conditional statements to see if it was greater than 1. Without going too much into detail of my testing/writing process, i eventually managed to figure out each step of funcrtionality needed. This was quite ONLY possible because i literally took things one step at a time.
 
-![image](./src/components/images/code-2.jpg)
+![image](./src/components/images/code-2.png)
 this image above displays the majority of the game's functionality and complexity
 
 
