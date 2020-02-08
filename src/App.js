@@ -100,10 +100,10 @@ class App extends Component {
       <div>
         <Navbar />
         <Wrapper>
-          <Score
-            score={this.state.score}
-            topScore={this.state.topScore}
-            message={this.state.message}>Score displays here</Score>
+          <Score>
+            <div className="currentScore"> Score: {this.state.score}</div>
+            <div className="topScore">Top Score: {this.state.score}</div>
+            </Score>
 
           {this.state.chars.map(char => (
               <CharacterCard
